@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="1.3.9" sequence="0" timestamp="1327676636069" analysisTimestamp="1327676754635" release="">
+  <Project>
+    <Jar>D:\Android\workspace\PoliSons\bin\classes</Jar>
+    <AuxClasspathEntry>D:\Android\android-sdk-windows\platforms\android-10\android.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Android\workspace\PoliSons\PoliSons\libs\htmlcleaner-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\fcr\AppData\Local\Temp\findbugs755709552715769840.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\fcr\AppData\Local\Temp\findbugs4921531624552451140.jar</AuxClasspathEntry>
+    <SrcDir>D:\Android\workspace\PoliSons\gen</SrcDir>
+    <SrcDir>D:\Android\workspace\PoliSons\src</SrcDir>
+    <WrkDir>D:\Android\workspace\PoliSons\target\sonar-embedder-work\target</WrkDir>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" abbrev="Nm" category="BAD_PRACTICE" instanceHash="975741e06fdba72f4423a360c9112fd5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de m&#195;&#169;thode devant commencer par une minuscule</ShortMessage>
+    <LongMessage>Le nom de la m&#195;&#169;thode fr.polisons.reader.News.DownloadImage(String) ne commence pas par une minuscule</LongMessage>
+    <Class classname="fr.polisons.reader.News" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="32" end="251" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+        <Message>At News.java:[lines 32-251]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.News</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.News" name="DownloadImage" signature="(Ljava/lang/String;)Landroid/graphics/Bitmap;" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="102" end="112" startBytecode="0" endBytecode="194" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java"/>
+      <Message>In method fr.polisons.reader.News.DownloadImage(String)</Message>
+    </Method>
+    <SourceLine classname="fr.polisons.reader.News" start="102" end="112" startBytecode="0" endBytecode="194" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java" synthetic="true">
+      <Message>At News.java:[lines 102-112]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" abbrev="Nm" category="BAD_PRACTICE" instanceHash="4d7b5abde0da7446e7855843e09493c2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de m&#195;&#169;thode devant commencer par une minuscule</ShortMessage>
+    <LongMessage>Le nom de la m&#195;&#169;thode fr.polisons.reader.News.OpenHttpConnection(String) ne commence pas par une minuscule</LongMessage>
+    <Class classname="fr.polisons.reader.News" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="32" end="251" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+        <Message>At News.java:[lines 32-251]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.News</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.News" name="OpenHttpConnection" signature="(Ljava/lang/String;)Ljava/io/InputStream;" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="118" end="143" startBytecode="0" endBytecode="353" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java"/>
+      <Message>In method fr.polisons.reader.News.OpenHttpConnection(String)</Message>
+    </Method>
+    <SourceLine classname="fr.polisons.reader.News" start="118" end="143" startBytecode="0" endBytecode="353" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java" synthetic="true">
+      <Message>At News.java:[lines 118-143]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" instanceHash="f3c8da56914b86b4ca320204056c5a8e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>java.lang.Exception est intercept&#195;&#169; alors qu&apos;Exception n&apos;est jamais lanc&#195;&#169;</ShortMessage>
+    <LongMessage>La m&#195;&#169;thode fr.polisons.reader.News.OpenHttpConnection(String) intercepte Exception, mais Exception n&apos;est pas lanc&#195;&#169; dans le bloc try/catch et RuntimeException n&apos;est pas appel&#195;&#169;</LongMessage>
+    <Class classname="fr.polisons.reader.News" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="32" end="251" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+        <Message>At News.java:[lines 32-251]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.News</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.News" name="OpenHttpConnection" signature="(Ljava/lang/String;)Ljava/io/InputStream;" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="118" end="143" startBytecode="0" endBytecode="353" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java"/>
+      <Message>In method fr.polisons.reader.News.OpenHttpConnection(String)</Message>
+    </Method>
+    <SourceLine classname="fr.polisons.reader.News" primary="true" start="139" end="139" startBytecode="92" endBytecode="92" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+      <Message>At News.java:[line 139]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="767dbe877d3fa82bcd94d45114025cb4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non initialis&#195;&#169; dans le constructeur</ShortMessage>
+    <LongMessage>Le champ n&apos;est pas initialis&#195;&#169; dans le constructeur fr.polisons.reader.News.rootNode</LongMessage>
+    <Class classname="fr.polisons.reader.News" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" start="32" end="251" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+        <Message>At News.java:[lines 32-251]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.News</Message>
+    </Class>
+    <Field classname="fr.polisons.reader.News" name="rootNode" signature="Lorg/htmlcleaner/TagNode;" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.News" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java">
+        <Message>In News.java</Message>
+      </SourceLine>
+      <Message>Field fr.polisons.reader.News.rootNode</Message>
+    </Field>
+    <SourceLine classname="fr.polisons.reader.News" sourcefile="News.java" sourcepath="fr/polisons/reader/News.java" relSourcepath="src\fr\polisons\reader\News.java" synthetic="true">
+      <Message>In News.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" instanceHash="164100c1145f0ebf60ade8f44433308" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe fr.polisons.reader.R$attr ne commence pas par une majusucle</LongMessage>
+    <Class classname="fr.polisons.reader.R$attr" primary="true">
+      <SourceLine classname="fr.polisons.reader.R$attr" start="11" end="11" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java">
+        <Message>At R.java:[line 11]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.R$attr</Message>
+    </Class>
+    <SourceLine classname="fr.polisons.reader.R$attr" start="11" end="11" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java" synthetic="true">
+      <Message>At R.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" instanceHash="59efa59f6744ae1a30e432f1462f13b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe fr.polisons.reader.R$drawable ne commence pas par une majusucle</LongMessage>
+    <Class classname="fr.polisons.reader.R$drawable" primary="true">
+      <SourceLine classname="fr.polisons.reader.R$drawable" start="13" end="13" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java">
+        <Message>At R.java:[line 13]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.R$drawable</Message>
+    </Class>
+    <SourceLine classname="fr.polisons.reader.R$drawable" start="13" end="13" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java" synthetic="true">
+      <Message>At R.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" instanceHash="70a80714acec95232ffde5c9aaa033a3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe fr.polisons.reader.R$id ne commence pas par une majusucle</LongMessage>
+    <Class classname="fr.polisons.reader.R$id" primary="true">
+      <SourceLine classname="fr.polisons.reader.R$id" start="17" end="17" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java">
+        <Message>At R.java:[line 17]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.R$id</Message>
+    </Class>
+    <SourceLine classname="fr.polisons.reader.R$id" start="17" end="17" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java" synthetic="true">
+      <Message>At R.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" instanceHash="c6ad1bd5052ec5c07c0f6980f6feaf65" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe fr.polisons.reader.R$layout ne commence pas par une majusucle</LongMessage>
+    <Class classname="fr.polisons.reader.R$layout" primary="true">
+      <SourceLine classname="fr.polisons.reader.R$layout" start="35" end="35" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java">
+        <Message>At R.java:[line 35]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.R$layout</Message>
+    </Class>
+    <SourceLine classname="fr.polisons.reader.R$layout" start="35" end="35" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java" synthetic="true">
+      <Message>At R.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" instanceHash="7839f7320a3f8fd4690ac106b8287e3d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe fr.polisons.reader.R$string ne commence pas par une majusucle</LongMessage>
+    <Class classname="fr.polisons.reader.R$string" primary="true">
+      <SourceLine classname="fr.polisons.reader.R$string" start="43" end="43" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java">
+        <Message>At R.java:[line 43]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.R$string</Message>
+    </Class>
+    <SourceLine classname="fr.polisons.reader.R$string" start="43" end="43" sourcefile="R.java" sourcepath="fr/polisons/reader/R.java" relSourcepath="gen\fr\polisons\reader\R.java" synthetic="true">
+      <Message>At R.java:[line 43]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="14bf8cb5543df638fb2a18443b62b840" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non initialis&#195;&#169; dans le constructeur</ShortMessage>
+    <LongMessage>Le champ n&apos;est pas initialis&#195;&#169; dans le constructeur fr.polisons.reader.RSS.feedRSS</LongMessage>
+    <Class classname="fr.polisons.reader.RSS" primary="true">
+      <SourceLine classname="fr.polisons.reader.RSS" start="13" end="44" sourcefile="RSS.java" sourcepath="fr/polisons/reader/RSS.java" relSourcepath="src\fr\polisons\reader\RSS.java">
+        <Message>At RSS.java:[lines 13-44]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.RSS</Message>
+    </Class>
+    <Field classname="fr.polisons.reader.RSS" name="feedRSS" signature="Lorg/mcsoxford/rss/RSSFeed;" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.RSS" sourcefile="RSS.java" sourcepath="fr/polisons/reader/RSS.java" relSourcepath="src\fr\polisons\reader\RSS.java">
+        <Message>In RSS.java</Message>
+      </SourceLine>
+      <Message>Field fr.polisons.reader.RSS.feedRSS</Message>
+    </Field>
+    <SourceLine classname="fr.polisons.reader.RSS" sourcefile="RSS.java" sourcepath="fr/polisons/reader/RSS.java" relSourcepath="src\fr\polisons\reader\RSS.java" synthetic="true">
+      <Message>In RSS.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" instanceHash="594398b9912999d999c1f64ae3edfee" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La m&#195;&#169;thode peut ne pas fermer un flux</ShortMessage>
+    <LongMessage>La m&#195;&#169;thode fr.polisons.reader.StreamingMediaPlayer.downloadAudioIncrement(String) peut ne pas fermer un flux</LongMessage>
+    <Class classname="fr.polisons.reader.StreamingMediaPlayer" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="31" end="297" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+        <Message>At StreamingMediaPlayer.java:[lines 31-297]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.StreamingMediaPlayer</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.StreamingMediaPlayer" name="downloadAudioIncrement" signature="(Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="89" end="116" startBytecode="0" endBytecode="94" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java"/>
+      <Message>In method fr.polisons.reader.StreamingMediaPlayer.downloadAudioIncrement(String)</Message>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="5" end="9" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java">
+        <Message>At OutputStream.java:[lines 5-9]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.OutputStream </Message>
+    </Type>
+    <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" primary="true" start="97" end="97" startBytecode="101" endBytecode="101" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+      <Message>At StreamingMediaPlayer.java:[line 97]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" instanceHash="a0d11580c12de57a45eee52669c9f46" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La m&#195;&#169;thode peut ne pas fermer un flux</ShortMessage>
+    <LongMessage>La m&#195;&#169;thode fr.polisons.reader.StreamingMediaPlayer.moveFile(File, File) peut ne pas fermer un flux</LongMessage>
+    <Class classname="fr.polisons.reader.StreamingMediaPlayer" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="31" end="297" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+        <Message>At StreamingMediaPlayer.java:[lines 31-297]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.StreamingMediaPlayer</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.StreamingMediaPlayer" name="moveFile" signature="(Ljava/io/File;Ljava/io/File;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="273" end="297" startBytecode="0" endBytecode="131" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java"/>
+      <Message>In method fr.polisons.reader.StreamingMediaPlayer.moveFile(File, File)</Message>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="5" end="9" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java">
+        <Message>At OutputStream.java:[lines 5-9]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.OutputStream </Message>
+    </Type>
+    <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" primary="true" start="275" end="275" startBytecode="23" endBytecode="23" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+      <Message>At StreamingMediaPlayer.java:[line 275]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM_EXCEPTION_PATH" priority="3" abbrev="OS" category="BAD_PRACTICE" instanceHash="5ee07f716f9307b576948b3c8c9cfe90" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La m&#195;&#169;thode peut oublier de fermer un flux en cas d&apos;exception</ShortMessage>
+    <LongMessage>La m&#195;&#169;thode fr.polisons.reader.StreamingMediaPlayer.moveFile(File, File) peut ne pas fermer un flux en cas d&apos;exception</LongMessage>
+    <Class classname="fr.polisons.reader.StreamingMediaPlayer" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="31" end="297" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+        <Message>At StreamingMediaPlayer.java:[lines 31-297]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.StreamingMediaPlayer</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.StreamingMediaPlayer" name="moveFile" signature="(Ljava/io/File;Ljava/io/File;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="273" end="297" startBytecode="0" endBytecode="131" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java"/>
+      <Message>In method fr.polisons.reader.StreamingMediaPlayer.moveFile(File, File)</Message>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="5" end="14" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>At InputStream.java:[lines 5-14]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.InputStream </Message>
+    </Type>
+    <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" primary="true" start="274" end="274" startBytecode="7" endBytecode="7" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+      <Message>At StreamingMediaPlayer.java:[line 274]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" abbrev="REC" category="STYLE" instanceHash="e1ca0aebc0241529fe0ac5dd9e5cb5e6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>java.lang.Exception est intercept&#195;&#169; alors qu&apos;Exception n&apos;est jamais lanc&#195;&#169;</ShortMessage>
+    <LongMessage>La m&#195;&#169;thode fr.polisons.reader.StreamingMediaPlayer.transferBufferToMediaPlayer() intercepte Exception, mais Exception n&apos;est pas lanc&#195;&#169; dans le bloc try/catch et RuntimeException n&apos;est pas appel&#195;&#169;</LongMessage>
+    <Class classname="fr.polisons.reader.StreamingMediaPlayer" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="31" end="297" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+        <Message>At StreamingMediaPlayer.java:[lines 31-297]</Message>
+      </SourceLine>
+      <Message>In class fr.polisons.reader.StreamingMediaPlayer</Message>
+    </Class>
+    <Method classname="fr.polisons.reader.StreamingMediaPlayer" name="transferBufferToMediaPlayer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" start="185" end="208" startBytecode="0" endBytecode="358" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java"/>
+      <Message>In method fr.polisons.reader.StreamingMediaPlayer.transferBufferToMediaPlayer()</Message>
+    </Method>
+    <SourceLine classname="fr.polisons.reader.StreamingMediaPlayer" primary="true" start="205" end="205" startBytecode="153" endBytecode="153" sourcefile="StreamingMediaPlayer.java" sourcepath="fr/polisons/reader/StreamingMediaPlayer.java" relSourcepath="src\fr\polisons\reader\StreamingMediaPlayer.java">
+      <Message>At StreamingMediaPlayer.java:[line 205]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="5557fff2386541561753abc77596ae11" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non initialis&#195;&#169; dans le constructeur</ShortMessage>
+    <LongMessage>Le champ n&apos;est pas initialis&#195;&#169; dans le constructeur org.mcsoxford.rss.RSSHandler.buffer</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSHandler" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSHandler" start="41" end="307" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java">
+        <Message>At RSSHandler.java:[lines 41-307]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSHandler</Message>
+    </Class>
+    <Field classname="org.mcsoxford.rss.RSSHandler" name="buffer" signature="Ljava/lang/StringBuilder;" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSHandler" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java">
+        <Message>In RSSHandler.java</Message>
+      </SourceLine>
+      <Message>Field org.mcsoxford.rss.RSSHandler.buffer</Message>
+    </Field>
+    <SourceLine classname="org.mcsoxford.rss.RSSHandler" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java" synthetic="true">
+      <Message>In RSSHandler.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="448c111945c5abb65a457d4588c96230" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non initialis&#195;&#169; dans le constructeur</ShortMessage>
+    <LongMessage>Le champ n&apos;est pas initialis&#195;&#169; dans le constructeur org.mcsoxford.rss.RSSHandler.setter</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSHandler" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSHandler" start="41" end="307" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java">
+        <Message>At RSSHandler.java:[lines 41-307]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSHandler</Message>
+    </Class>
+    <Field classname="org.mcsoxford.rss.RSSHandler" name="setter" signature="Lorg/mcsoxford/rss/RSSHandler$Setter;" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSHandler" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java">
+        <Message>In RSSHandler.java</Message>
+      </SourceLine>
+      <Message>Field org.mcsoxford.rss.RSSHandler.setter</Message>
+    </Field>
+    <SourceLine classname="org.mcsoxford.rss.RSSHandler" sourcefile="RSSHandler.java" sourcepath="org/mcsoxford/rss/RSSHandler.java" relSourcepath="src\org\mcsoxford\rss\RSSHandler.java" synthetic="true">
+      <Message>In RSSHandler.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" abbrev="RV" category="BAD_PRACTICE" instanceHash="32cda74a5ae13d20d579e970324de2f4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>org.mcsoxford.rss.RSSLoader.stop() ignores exceptional return value of java.util.concurrent.BlockingQueue.offer(Object)</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSLoader" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader" start="71" end="337" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+        <Message>At RSSLoader.java:[lines 71-337]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSLoader</Message>
+    </Class>
+    <Method classname="org.mcsoxford.rss.RSSLoader" name="stop" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader" start="166" end="168" startBytecode="0" endBytecode="68" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java"/>
+      <Message>In method org.mcsoxford.rss.RSSLoader.stop()</Message>
+    </Method>
+    <Method classname="java.util.concurrent.BlockingQueue" name="offer" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.BlockingQueue" sourcefile="BlockingQueue.java" sourcepath="java/util/concurrent/BlockingQueue.java"/>
+      <Message>Called method java.util.concurrent.BlockingQueue.offer(Object)</Message>
+    </Method>
+    <SourceLine classname="org.mcsoxford.rss.RSSLoader" primary="true" start="167" end="167" startBytecode="12" endBytecode="12" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+      <Message>At RSSLoader.java:[line 167]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SC_START_IN_CTOR" priority="2" abbrev="SC" category="MT_CORRECTNESS" instanceHash="134e5a0b5a9a72c2cd3c7bc7184d0f9c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Un constructeur invoque Thread.start()</ShortMessage>
+    <LongMessage>new org.mcsoxford.rss.RSSLoader(BlockingQueue) invoque Thread.start()</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSLoader" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader" start="71" end="337" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+        <Message>At RSSLoader.java:[lines 71-337]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSLoader</Message>
+    </Class>
+    <Method classname="org.mcsoxford.rss.RSSLoader" name="&lt;init&gt;" signature="(Ljava/util/concurrent/BlockingQueue;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader" start="138" end="144" startBytecode="0" endBytecode="133" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java"/>
+      <Message>In method new org.mcsoxford.rss.RSSLoader(BlockingQueue)</Message>
+    </Method>
+    <Method classname="java.lang.Thread" name="start" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Thread" start="61" end="61" startBytecode="0" endBytecode="51" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+      <Message>Called method Thread.start()</Message>
+    </Method>
+    <SourceLine classname="org.mcsoxford.rss.RSSLoader" primary="true" start="143" end="143" startBytecode="44" endBytecode="44" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+      <Message>At RSSLoader.java:[line 143]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" instanceHash="6a6818f4c1f666fe7bd307a946609a6e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines compareTo(...) and uses Object.equals()</ShortMessage>
+    <LongMessage>org.mcsoxford.rss.RSSLoader$RSSFuture defines compareTo(RSSLoader$RSSFuture) and uses Object.equals()</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSLoader$RSSFuture" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="1" end="450" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+        <Message>At RSSLoader.java:[lines 1-450]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSLoader$RSSFuture</Message>
+    </Class>
+    <Method classname="org.mcsoxford.rss.RSSLoader$RSSFuture" name="compareTo" signature="(Lorg/mcsoxford/rss/RSSLoader$RSSFuture;)I" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="450" end="450" startBytecode="0" endBytecode="61" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java"/>
+      <Message>In method org.mcsoxford.rss.RSSLoader$RSSFuture.compareTo(RSSLoader$RSSFuture)</Message>
+    </Method>
+    <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="450" end="450" startBytecode="0" endBytecode="61" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java" synthetic="true">
+      <Message>At RSSLoader.java:[line 450]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UG_SYNC_SET_UNSYNC_GET" priority="2" abbrev="UG" category="MT_CORRECTNESS" instanceHash="78744286dc82c4a3461755df576af573" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>M&#195;&#169;thode getXXX non synchronis&#195;&#169;e, m&#195;&#169;thode setXXX synchronis&#195;&#169;e</ShortMessage>
+    <LongMessage>org.mcsoxford.rss.RSSLoader$RSSFuture.get() n&apos;est pas synchronis&#195;&#169;e alors que org.mcsoxford.rss.RSSLoader$RSSFuture.set(RSSFeed, Exception) l&apos;est</LongMessage>
+    <Class classname="org.mcsoxford.rss.RSSLoader$RSSFuture" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="1" end="450" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java">
+        <Message>At RSSLoader.java:[lines 1-450]</Message>
+      </SourceLine>
+      <Message>In class org.mcsoxford.rss.RSSLoader$RSSFuture</Message>
+    </Class>
+    <Method classname="org.mcsoxford.rss.RSSLoader$RSSFuture" name="get" signature="()Ljava/lang/Object;" isStatic="false" primary="true">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="1" end="1" startBytecode="0" endBytecode="36" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java"/>
+      <Message>In method org.mcsoxford.rss.RSSLoader$RSSFuture.get()</Message>
+    </Method>
+    <Method classname="org.mcsoxford.rss.RSSLoader$RSSFuture" name="set" signature="(Lorg/mcsoxford/rss/RSSFeed;Ljava/lang/Exception;)V" isStatic="false">
+      <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="438" end="445" startBytecode="0" endBytecode="117" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java"/>
+      <Message>In method org.mcsoxford.rss.RSSLoader$RSSFuture.set(RSSFeed, Exception)</Message>
+    </Method>
+    <SourceLine classname="org.mcsoxford.rss.RSSLoader$RSSFuture" start="1" end="1" startBytecode="0" endBytecode="36" sourcefile="RSSLoader.java" sourcepath="org/mcsoxford/rss/RSSLoader.java" relSourcepath="src\org\mcsoxford\rss\RSSLoader.java" synthetic="true">
+      <Message>At RSSLoader.java:[line 1]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy</Description>
+  </BugCategory>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MT_CORRECTNESS">
+    <Description>Droiture en environnement multit&#195;&#162;che</Description>
+  </BugCategory>
+  <BugPattern type="UG_SYNC_SET_UNSYNC_GET" abbrev="UG" category="MT_CORRECTNESS">
+    <ShortDescription>M&#195;&#169;thode getXXX non synchronis&#195;&#169;e, m&#195;&#169;thode setXXX synchronis&#195;&#169;e</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette classe contient des mÃ©thodes <code>getXXX</code> et <code>setXXX</code> similaires dont la mÃ©thode <code>setXXX</code> est synchronisÃ©e tandis que la mÃ©thode <code>getXXX</code> ne l'est pas. Ceci peut entraÃ®ner un comportement incorrect Ã  l'exÃ©cution car l'appelant de la mÃ©thode <code>getXXX</code> ne verra pas obligatoirement l'objet dans un Ã©tat consistant. La mÃ©thode <code>getXXX</code> devrait Ãªtre synchronisÃ©e.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="SC_START_IN_CTOR" abbrev="SC" category="MT_CORRECTNESS">
+    <ShortDescription>Un constructeur invoque Thread.start()</ShortDescription>
+    <Details><![CDATA[
+
+<p>Le constructeur lance un thread. Il y a de fortes chances que ce soit une erreur si cette classe est un jour dÃ©rivÃ©e ou Ã©tendue puisque que le thread sera alors lancÃ© avant que le constructeur de la classe dÃ©rivÃ©e ne soit appelÃ©.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM_EXCEPTION_PATH" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>La m&#195;&#169;thode peut oublier de fermer un flux en cas d&apos;exception</ShortDescription>
+    <Details><![CDATA[
+
+<p>La mÃ©thode crÃ©e un flux d'E/S, ne l'affecte Ã  aucun champ, ne le passe Ã  aucune mÃ©thode, ne le renvoit pas, et ne semble pas le fermer dans tous les chemins d'exception possibles. Ceci peut provoquer le blocage d'un descripteur de fichier. C'est gÃ©nÃ©ralement une bonne idÃ©e d'utiliser un bloc <code>finally</code> pour garantir la fermeture des flux.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>La m&#195;&#169;thode peut ne pas fermer un flux</ShortDescription>
+    <Details><![CDATA[
+
+<p>La mÃ©thode crÃ©e un objet de flux d'E/S, ne l'assigne Ã  aucun champ, ne le passe Ã  aucune mÃ©thode, ne le renvoit pas et ne semble pas le fermer dans tous les chemins d'exÃ©cution. Ceci peut entraÃ®ner le blocage d'un descripteur de fichier. C'est gÃ©nÃ©ralement une bonne idÃ©e d'utiliser un bloc <code>finally</code> pour s'assurer de la fermeture des flux.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="NM_METHOD_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de m&#195;&#169;thode devant commencer par une minuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de mÃ©thodes devraient Ãªtre des verbes en minuscules, avec la premiÃ¨re lettre des mots, aprÃ¨s le premier, en majuscules.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than 
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NM_CLASS_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de classe devant commencer par une majuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de classe doivent Ãªtre en minuscules avec la premiÃ¨re lettre de chaque mot en majuscules. Essayez de conserver vos noms de classes simples et explicites. Utilisez des mots entiers et Ã©vitez acronymes et abbrÃ©viations (Ã  moins que l'abbrÃ©viation soit plus largement utilisÃ©e que la forme longue, comme "URL" ou "HTML").</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" abbrev="UwF" category="STYLE">
+    <ShortDescription>Champ non initialis&#195;&#169; dans le constructeur</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais initialisÃ© dans aucun constructeur, et est de ce fait <code>null</code> une fois l'objet initialisÃ©. Soit il s'agit d'une erreur, soit il s'agit d'un design douteux puisque ce champ gÃ©nÃ¨ra une exception s'il est dÃ©rÃ©fÃ©rencÃ© avant toute initialisation.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="EQ_COMPARETO_USE_OBJECT_EQUALS" abbrev="Eq" category="BAD_PRACTICE">
+    <ShortDescription>Class defines compareTo(...) and uses Object.equals()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class defines a <code>compareTo(...)</code> method but inherits its
+  <code>equals()</code> method from <code>java.lang.Object</code>.
+	Generally, the value of compareTo should return zero if and only if
+	equals returns true. If this is violated, weird and unpredictable
+	failures will occur in classes such as PriorityQueue.
+	In Java 5 the PriorityQueue.remove method uses the compareTo method,
+	while in Java 6 it uses the equals method.
+
+<p>From the JavaDoc for the compareTo method in the Comparable interface:
+<blockquote>
+It is strongly recommended, but not strictly required that <code>(x.compareTo(y)==0) == (x.equals(y))</code>. 
+Generally speaking, any class that implements the Comparable interface and violates this condition 
+should clearly indicate this fact. The recommended language 
+is "Note: this class has a natural ordering that is inconsistent with equals."
+</blockquote>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>java.lang.Exception est intercept&#195;&#169; alors qu&apos;Exception n&apos;est jamais lanc&#195;&#169;</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette mÃ©thode utilise un block <code>try-catch</code> qui intercepte les objets <code>Exception</code>, mais <code>Exception</code> n'est jamais dÃ©clenchÃ© dans ce bloc, et <code>RuntimeException</code> n'est pas explicitement interceptÃ©.  C'est une erreur commune de dire que <code>try / catch (Exception e)</code> est identique Ã  plusieurs <code>try / catch</code>, mais cette tournure intercepte Ã©galement les <code>RuntimeException</code>, masquant des bugs potentiels.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Eq">
+    <Description>M&#195;&#169;thodes equals() covariantes</Description>
+  </BugCode>
+  <BugCode abbrev="SC">
+    <Description>Constructeur invoquant Thread.start()</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Noms de m&#195;&#169;thodes ambigus</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Valeur de retour d&apos;une m&#195;&#169;thode mal utilis&#195;&#169;e</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Champ jamais aliment&#195;&#169;</Description>
+  </BugCode>
+  <BugCode abbrev="OS">
+    <Description>Flux pas toujours ferm&#195;&#169; dans les diff&#195;&#169;rents chemins d&apos;&#195;&#169;x&#195;&#169;cution</Description>
+  </BugCode>
+  <BugCode abbrev="REC">
+    <Description>Capture de RuntimeException</Description>
+  </BugCode>
+  <BugCode abbrev="UG">
+    <Description>M&#195;&#169;thode get non synchronis&#195;&#169;e, m&#195;&#169;thode set synchronis&#195;&#169;e</Description>
+  </BugCode>
+  <Errors errors="1" missingClasses="5">
+    <Error>
+      <ErrorMessage>Cannot open codebase filesystem:D:\Android\workspace\PoliSons\PoliSons\libs\htmlcleaner-2.2.jar</ErrorMessage>
+      <Exception>java.io.FileNotFoundException: D:\Android\workspace\PoliSons\PoliSons\libs\htmlcleaner-2.2.jar (The system cannot find the path specified)</Exception>
+      <StackTrace>java.util.zip.ZipFile.open(Native Method)</StackTrace>
+      <StackTrace>java.util.zip.ZipFile.&lt;init&gt;(ZipFile.java:114)</StackTrace>
+      <StackTrace>java.util.zip.ZipFile.&lt;init&gt;(ZipFile.java:131)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ZipFileCodeBase.&lt;init&gt;(ZipFileCodeBase.java:53)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory.countUsingZipFile(ZipCodeBaseFactory.java:92)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory.makeZipCodeBase(ZipCodeBaseFactory.java:46)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassFactory.createFilesystemCodeBase(ClassFactory.java:97)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.FilesystemCodeBaseLocator.openCodeBase(FilesystemCodeBaseLocator.java:75)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.processWorkList(ClassPathBuilder.java:564)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.build(ClassPathBuilder.java:195)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.buildClassPath(FindBugs2.java:584)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:181)</StackTrace>
+      <StackTrace>org.sonar.plugins.findbugs.FindbugsExecutor$FindbugsTask.call(FindbugsExecutor.java:126)</StackTrace>
+      <StackTrace>java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)</StackTrace>
+      <StackTrace>java.util.concurrent.FutureTask.run(FutureTask.java:138)</StackTrace>
+      <StackTrace>java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)</StackTrace>
+      <StackTrace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)</StackTrace>
+      <StackTrace>java.lang.Thread.run(Thread.java:619)</StackTrace>
+    </Error>
+    <MissingClass>java.rmi.Remote</MissingClass>
+    <MissingClass>org.htmlcleaner.CleanerProperties</MissingClass>
+    <MissingClass>org.htmlcleaner.HtmlCleaner</MissingClass>
+    <MissingClass>org.htmlcleaner.TagNode</MissingClass>
+    <MissingClass>org.htmlcleaner.XPatherException</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Fri, 27 Jan 2012 16:03:56 +0100" total_classes="54" referenced_classes="186" total_bugs="20" total_size="1272" num_packages="2" vm_version="17.0-b17" cpu_seconds="3.34" clock_seconds="1.70" peak_mbytes="543.10" alloc_mbytes="345.94" gc_seconds="0.11" priority_3="8" priority_2="12">
+    <FileStats path="fr/polisons/reader/INews.java" bugCount="0" size="35"/>
+    <FileStats path="fr/polisons/reader/INewsAdapter.java" bugCount="0" size="43"/>
+    <FileStats path="fr/polisons/reader/INewsData.java" bugCount="0" size="17"/>
+    <FileStats path="fr/polisons/reader/INewsDetail.java" bugCount="0" size="26"/>
+    <FileStats path="fr/polisons/reader/IRss.java" bugCount="0" size="28"/>
+    <FileStats path="fr/polisons/reader/IRssAdapter.java" bugCount="0" size="43"/>
+    <FileStats path="fr/polisons/reader/IRssData.java" bugCount="0" size="17"/>
+    <FileStats path="fr/polisons/reader/IRssMenu.java" bugCount="0" size="33"/>
+    <FileStats path="fr/polisons/reader/News.java" bugCount="4" size="138" bugHash="aeb48ed2ed4ab2f8e16a0e06ad2bf519"/>
+    <FileStats path="fr/polisons/reader/PoliSonActivity.java" bugCount="0" size="36"/>
+    <FileStats path="fr/polisons/reader/R.java" bugCount="5" size="49" bugHash="c9c21907493b1da9986ff6a0cad29e4d"/>
+    <FileStats path="fr/polisons/reader/RSS.java" bugCount="1" size="24" bugHash="6586746e2ac9305b6b7a38d530f062d2"/>
+    <FileStats path="fr/polisons/reader/StreamingMediaPlayer.java" bugCount="4" size="215" bugHash="1beb7fdc01dc9e092d5df4051e950474"/>
+    <FileStats path="org/mcsoxford/rss/Dates.java" bugCount="0" size="12"/>
+    <FileStats path="org/mcsoxford/rss/MediaAttributes.java" bugCount="0" size="10"/>
+    <FileStats path="org/mcsoxford/rss/MediaThumbnail.java" bugCount="0" size="27"/>
+    <FileStats path="org/mcsoxford/rss/RSSBase.java" bugCount="0" size="55"/>
+    <FileStats path="org/mcsoxford/rss/RSSConfig.java" bugCount="0" size="13"/>
+    <FileStats path="org/mcsoxford/rss/RSSException.java" bugCount="0" size="11"/>
+    <FileStats path="org/mcsoxford/rss/RSSFault.java" bugCount="0" size="11"/>
+    <FileStats path="org/mcsoxford/rss/RSSFeed.java" bugCount="0" size="20"/>
+    <FileStats path="org/mcsoxford/rss/RSSHandler.java" bugCount="2" size="145" bugHash="bc97c5576edef2870fef6f216994402d"/>
+    <FileStats path="org/mcsoxford/rss/RSSItem.java" bugCount="0" size="26"/>
+    <FileStats path="org/mcsoxford/rss/RSSLoader.java" bugCount="4" size="139" bugHash="c07a8d10504e1640926678bc7250dd10"/>
+    <FileStats path="org/mcsoxford/rss/RSSParser.java" bugCount="0" size="29"/>
+    <FileStats path="org/mcsoxford/rss/RSSParserSPI.java" bugCount="0" size="2"/>
+    <FileStats path="org/mcsoxford/rss/RSSReader.java" bugCount="0" size="41"/>
+    <FileStats path="org/mcsoxford/rss/RSSReaderException.java" bugCount="0" size="17"/>
+    <FileStats path="org/mcsoxford/rss/Resources.java" bugCount="0" size="10"/>
+    <PackageStats package="fr.polisons.reader" total_bugs="14" total_types="26" total_size="704" priority_3="6" priority_2="8">
+      <ClassStats class="fr.polisons.reader.INews" sourceFile="INews.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.INewsAdapter" sourceFile="INewsAdapter.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.INewsAdapter$INewsHolder" sourceFile="INewsAdapter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.INewsData" sourceFile="INewsData.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.INewsDetail" sourceFile="INewsDetail.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.IRss" sourceFile="IRss.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.IRssAdapter" sourceFile="IRssAdapter.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.IRssAdapter$IRssHolder" sourceFile="IRssAdapter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.IRssData" sourceFile="IRssData.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.IRssMenu" sourceFile="IRssMenu.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.News" sourceFile="News.java" interface="false" size="138" bugs="4" priority_3="3" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.PoliSonActivity" sourceFile="PoliSonActivity.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.R" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.R$attr" sourceFile="R.java" interface="false" size="3" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.R$drawable" sourceFile="R.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.R$id" sourceFile="R.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.R$layout" sourceFile="R.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.R$string" sourceFile="R.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.polisons.reader.RSS" sourceFile="RSS.java" interface="false" size="24" bugs="1" priority_3="1"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer" sourceFile="StreamingMediaPlayer.java" interface="false" size="152" bugs="4" priority_3="2" priority_2="2"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$1" sourceFile="StreamingMediaPlayer.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$2" sourceFile="StreamingMediaPlayer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$3" sourceFile="StreamingMediaPlayer.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$4" sourceFile="StreamingMediaPlayer.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$5" sourceFile="StreamingMediaPlayer.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="fr.polisons.reader.StreamingMediaPlayer$6" sourceFile="StreamingMediaPlayer.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mcsoxford.rss" total_bugs="6" total_types="28" total_size="568" priority_3="2" priority_2="4">
+      <ClassStats class="org.mcsoxford.rss.Dates" sourceFile="Dates.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.MediaAttributes" sourceFile="MediaAttributes.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.MediaThumbnail" sourceFile="MediaThumbnail.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSBase" sourceFile="RSSBase.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSConfig" sourceFile="RSSConfig.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSException" sourceFile="RSSException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSFault" sourceFile="RSSFault.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSFeed" sourceFile="RSSFeed.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler" sourceFile="RSSHandler.java" interface="false" size="60" bugs="2" priority_3="2"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$1" sourceFile="RSSHandler.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$2" sourceFile="RSSHandler.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$3" sourceFile="RSSHandler.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$4" sourceFile="RSSHandler.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$5" sourceFile="RSSHandler.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$6" sourceFile="RSSHandler.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$7" sourceFile="RSSHandler.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$AttributeSetter" sourceFile="RSSHandler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$ContentSetter" sourceFile="RSSHandler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSHandler$Setter" sourceFile="RSSHandler.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSItem" sourceFile="RSSItem.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSLoader" sourceFile="RSSLoader.java" interface="false" size="52" bugs="2" priority_2="2"/>
+      <ClassStats class="org.mcsoxford.rss.RSSLoader$Loader" sourceFile="RSSLoader.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSLoader$RSSFuture" sourceFile="RSSLoader.java" interface="false" size="63" bugs="2" priority_2="2"/>
+      <ClassStats class="org.mcsoxford.rss.RSSParser" sourceFile="RSSParser.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSParserSPI" sourceFile="RSSParserSPI.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSReader" sourceFile="RSSReader.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.RSSReaderException" sourceFile="RSSReaderException.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mcsoxford.rss.Resources" sourceFile="Resources.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="11" invocations="54" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="2207" standardDeviationMircosecondsPerInvocation="354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="11" invocations="186" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="938" standardDeviationMircosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="11" invocations="54" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="1567" standardDeviationMircosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="12" invocations="54" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="2274" standardDeviationMircosecondsPerInvocation="426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="12" invocations="54" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="1558" standardDeviationMircosecondsPerInvocation="283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="12" invocations="54" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="5927" standardDeviationMircosecondsPerInvocation="886"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="14" invocations="2369" avgMicrosecondsPerInvocation="6" maxMicrosecondsPerInvocation="132" standardDeviationMircosecondsPerInvocation="12"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="17" invocations="211" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="999" standardDeviationMircosecondsPerInvocation="134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="186" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="1480" standardDeviationMircosecondsPerInvocation="219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="22" invocations="186" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="1746" standardDeviationMircosecondsPerInvocation="203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="23" invocations="234" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="1395" standardDeviationMircosecondsPerInvocation="151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="28" invocations="214" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="964" standardDeviationMircosecondsPerInvocation="162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="37" invocations="186" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="2197" standardDeviationMircosecondsPerInvocation="328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="38" invocations="54" avgMicrosecondsPerInvocation="706" maxMicrosecondsPerInvocation="32056" standardDeviationMircosecondsPerInvocation="4309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="40" invocations="511" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="242" standardDeviationMircosecondsPerInvocation="30"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="51" invocations="211" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="2609" standardDeviationMircosecondsPerInvocation="375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="51" invocations="42" avgMicrosecondsPerInvocation="1231" maxMicrosecondsPerInvocation="29676" standardDeviationMircosecondsPerInvocation="4492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="67" invocations="190" avgMicrosecondsPerInvocation="356" maxMicrosecondsPerInvocation="3958" standardDeviationMircosecondsPerInvocation="623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="68" invocations="178" avgMicrosecondsPerInvocation="385" maxMicrosecondsPerInvocation="13389" standardDeviationMircosecondsPerInvocation="1189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="77" invocations="3212" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="28345" standardDeviationMircosecondsPerInvocation="500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="79" invocations="497" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="18093" standardDeviationMircosecondsPerInvocation="824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="82" invocations="223" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="6281" standardDeviationMircosecondsPerInvocation="766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="277" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="17178" standardDeviationMircosecondsPerInvocation="1162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="106" invocations="211" avgMicrosecondsPerInvocation="504" maxMicrosecondsPerInvocation="7896" standardDeviationMircosecondsPerInvocation="1037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="108" invocations="196" avgMicrosecondsPerInvocation="553" maxMicrosecondsPerInvocation="21432" standardDeviationMircosecondsPerInvocation="2048"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

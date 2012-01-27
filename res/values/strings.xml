@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoliSons</string>
+    <string name="title_main">La WebRadio de la Petite Camargue</string>
+    <string name="title_news">News</string>
+    <string name="title_podcasts">Podcasts</string>
+    <string name="button_send">Envoyer</string>
+    <string name="app_logo">Logo</string>
+    <string name="article_photo">Photo</string>
+</resources>

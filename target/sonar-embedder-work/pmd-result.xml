@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2012-01-27T16:05:57.652">
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\INews.java">
+<violation beginline="34" endline="34" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="INews" method="initialize" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="37" endline="37" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="INews" method="initialize" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\INewsDetail.java">
+<violation beginline="14" endline="14" begincolumn="17" endcolumn="26" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="INewsDetail" variable="news" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'news' could be replaced by a local variable.
+</violation>
+<violation beginline="29" endline="29" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="INewsDetail" method="onCreate" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="32" endline="32" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="INewsDetail" method="onCreate" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\IRss.java">
+<violation beginline="18" endline="18" begincolumn="17" endcolumn="38" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="IRss" variable="m_data" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'm_data' could be replaced by a local variable.
+</violation>
+<violation beginline="31" endline="31" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="IRss" method="onCreate" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\IRssMenu.java">
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="46" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="IRssMenu" variable="m_data" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'm_data' could be replaced by a local variable.
+</violation>
+<violation beginline="35" endline="35" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="IRssMenu" method="initialize" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="38" endline="38" begincolumn="25" endcolumn="43" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="IRssMenu" method="initialize" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\News.java">
+<violation beginline="68" endline="69" begincolumn="18" endcolumn="67" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractElement" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="76" endline="89" begincolumn="9" endcolumn="84" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="77" endline="89" begincolumn="17" endcolumn="84" rule="ForLoopsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#ForLoopsMustUseBraces" priority="3">
+Avoid using for statements without curly braces
+</violation>
+<violation beginline="79" endline="79" begincolumn="33" endcolumn="118" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="81" endline="81" begincolumn="33" endcolumn="53" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="83" endline="83" begincolumn="33" endcolumn="53" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="85" endline="85" begincolumn="33" endcolumn="104" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="87" endline="87" begincolumn="33" endcolumn="126" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="88" endline="89" begincolumn="30" endcolumn="84" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="extractText" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="110" endline="110" begincolumn="13" endcolumn="32" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="fr.polisons.reader" class="News" method="DownloadImage" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="124" endline="125" begincolumn="9" endcolumn="60" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="News" method="OpenHttpConnection" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="141" endline="141" begincolumn="13" endcolumn="54" rule="PreserveStackTrace" ruleset="Design Rules" package="fr.polisons.reader" class="News" method="OpenHttpConnection" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#PreserveStackTrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="163" endline="163" begincolumn="30" endcolumn="39" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="fr.polisons.reader" class="News" method="getNews" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;PoliSons&quot; appears 9 times in this file; the first occurrence is on line 163
+</violation>
+<violation beginline="170" endline="170" begincolumn="33" endcolumn="39" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="fr.polisons.reader" class="News" method="getNews" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;ERROR&quot; appears 4 times in this file; the first occurrence is on line 170
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\PoliSonActivity.java">
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="39" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="PoliSonActivity" variable="vSwitcher" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'vSwitcher' could be replaced by a local variable.
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\RSS.java">
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="35" rule="LooseCoupling" ruleset="Coupling Rules" package="fr.polisons.reader" class="RSS" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="44" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="RSS" variable="rssData" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'rssData' could be replaced by a local variable.
+</violation>
+<violation beginline="18" endline="18" begincolumn="17" endcolumn="31" rule="SingularField" ruleset="Design Rules" package="fr.polisons.reader" class="RSS" variable="datas" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'datas' could be replaced by a local variable.
+</violation>
+<violation beginline="29" endline="29" begincolumn="12" endcolumn="30" rule="LooseCoupling" ruleset="Coupling Rules" package="fr.polisons.reader" class="RSS" method="getFeeds" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\fr\polisons\reader\StreamingMediaPlayer.java">
+<violation beginline="54" endline="60" begincolumn="16" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="fr.polisons.reader" class="StreamingMediaPlayer" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'streamButton'.
+</violation>
+<violation beginline="102" endline="103" begincolumn="13" endcolumn="22" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="fr.polisons.reader" class="StreamingMediaPlayer" method="downloadAudioIncrement" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="283" endline="283" begincolumn="33" endcolumn="145" rule="PreserveStackTrace" ruleset="Design Rules" package="fr.polisons.reader" class="StreamingMediaPlayer" method="moveFile" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#PreserveStackTrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+</file>
+<file name="D:\Android\workspace\PoliSons\src\org\mcsoxford\rss\RSSHandler.java">
+<violation beginline="62" endline="62" begincolumn="18" endcolumn="36" rule="UnusedModifier" ruleset="Controversial Rules" package="org.mcsoxford.rss" class="RSSHandler" externalInfoUrl="http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier" priority="5">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="67" endline="74" begincolumn="18" endcolumn="3" rule="UnusedModifier" ruleset="Controversial Rules" package="org.mcsoxford.rss" class="RSSHandler" externalInfoUrl="http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier" priority="5">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="80" endline="87" begincolumn="18" endcolumn="3" rule="UnusedModifier" ruleset="Controversial Rules" package="org.mcsoxford.rss" class="RSSHandler" externalInfoUrl="http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier" priority="5">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+</pmd>
