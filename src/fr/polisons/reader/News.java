@@ -4,7 +4,6 @@ package fr.polisons.reader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -102,12 +101,12 @@ public class News {
         }
 	}
 	
-    private Bitmap downloadImage(String URL)
+    private Bitmap downloadImage(String urL)
     {        
         Bitmap bitmap = null;
         InputStream in = null;        
         try {
-            in = openHttpConnection("http://www.poli-sons.fr/"+URL);
+            in = openHttpConnection("http://www.poli-sons.fr/"+urL);
             bitmap = BitmapFactory.decodeStream(in);
             in.close();
         } catch (IOException e1) {

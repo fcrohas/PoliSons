@@ -43,5 +43,12 @@
 			<artifactId>htmlcleaner</artifactId>
 			<version>2.2</version>
 		</dependency>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>2.2</version>
+			<scope>system</scope>
+			<systemPath>D:/Android/android-sdk-windows/platforms/android-8/android.jar</systemPath>
+		</dependency>
 	</dependencies>
 </project>
