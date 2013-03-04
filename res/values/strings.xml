@@ -7,4 +7,6 @@
     <string name="button_send">Envoyer</string>
     <string name="app_logo">Logo</string>
     <string name="article_photo">Photo</string>
+    <string name="title_rss">RSS</string>
+    <string name="button_play">Play</string>
 </resources>
