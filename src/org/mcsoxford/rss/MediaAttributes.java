@@ -38,14 +38,23 @@ final class MediaAttributes {
    * Returns the RSS 2.0 attribute with the specified local name as an integer. 
    * The {@code defaultValue} is returned if no attribute with such name exists.
    */
-  static int intValue(org.xml.sax.Attributes attributes, String name, int defaultValue) {
+  static int intValue(org.xml.sax.Attributes attributes, String name, int defaultLength) {
     final String value = stringValue(attributes, name);
     if(value == null) {
-      return defaultValue;
+      return defaultLength;
     }
 
     return Integer.parseInt(value);
   }
 
+  static long longValue(org.xml.sax.Attributes attributes, String name, long defaultLength) {
+	    final String value = stringValue(attributes, name);
+	    if(value == null) {
+	      return defaultLength;
+	    }
+
+	    return Long.parseLong(value);
+	  }
+  
 }
 

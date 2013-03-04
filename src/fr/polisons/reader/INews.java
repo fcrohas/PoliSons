@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -31,10 +32,17 @@ public class INews extends Activity implements OnItemClickListener {
 	        m_data = news.getNews("//table[@class='blabla']");
         } catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			AlertDialog alertDialog;
+			alertDialog = new AlertDialog.Builder(this).create();
+			alertDialog.setTitle("Internet");
+			alertDialog.setMessage("Pas d'accés internet");
+			alertDialog.show();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			AlertDialog alertDialog;
+			alertDialog = new AlertDialog.Builder(this).create();
+			alertDialog.setTitle("Internet");
+			alertDialog.setMessage("Pas d'accés internet");
+			alertDialog.show();
 		}
     	INewsAdapter newsAdapter = new INewsAdapter(this, R.layout.newsrow, m_data);
         ListView newsList = (ListView)findViewById(R.id.list);

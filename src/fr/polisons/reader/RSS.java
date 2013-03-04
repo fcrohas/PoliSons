@@ -38,6 +38,8 @@ public class RSS {
 			datas.description = Html.fromHtml(item.getDescription()).toString();
 			datas.title = item.getTitle();
 			datas.link = item.getLink().toString();
+			datas.enclosure = item.getEnclosure();
+			datas.length = item.getLength();
 			//datas.image = item.getThumbnails();
 			rssData.add(datas);
 		}

@@ -5,6 +5,7 @@ import java.util.List;
 import org.mcsoxford.rss.RSSReaderException;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,12 @@ public class IRss extends Activity implements OnItemClickListener {
 			initialize();
 		} catch (RSSReaderException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			AlertDialog alertDialog;
+			alertDialog = new AlertDialog.Builder(this).create();
+			alertDialog.setTitle("Internet");
+			alertDialog.setMessage("Pas d'accés internet");
+			alertDialog.show();
+			//e.printStackTrace();
 		}
 
     }
@@ -49,7 +55,9 @@ public class IRss extends Activity implements OnItemClickListener {
 		// TODO Auto-generated method stub
 		ListView newsList = (ListView)findViewById(R.id.list);
 		String rssLink = ((IRssData)newsList.getAdapter().getItem(position)).link;
-		this.startActivity(new Intent(this,INewsDetail.class).putExtra("link", rssLink).putExtra("name", getString(R.string.title_podcasts)));
+		String enclosure = ((IRssData)newsList.getAdapter().getItem(position)).enclosure;
+		long length = ((IRssData)newsList.getAdapter().getItem(position)).length;
+		this.startActivity(new Intent(this,IRssDetail.class).putExtra("link", rssLink).putExtra("name", getString(R.string.title_podcasts)).putExtra("length",length).putExtra("enclosure", enclosure));
 		
 	}
 

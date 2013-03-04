@@ -26,11 +26,11 @@ import android.widget.TextView;
  */
 public class StreamingMediaPlayer {
 
-    private static final int INTIAL_KB_BUFFER =  96*10/8;//assume 96kbps*10secs/8bits per byte
+    private static final int INTIAL_KB_BUFFER =  128*30/16;//assume 96kbps*10secs/8bits per byte
 
 	private TextView textStreamed;
 	
-	private ImageButton playButton;
+	private Button playButton;
 	
 	private ProgressBar	progressBar;
 	
@@ -41,7 +41,7 @@ public class StreamingMediaPlayer {
 	// Create Handler to call View updates on the main UI thread.
 	private final Handler handler = new Handler();
 
-	private MediaPlayer 	mediaPlayer;
+	private MediaPlayer mediaPlayer;
 	
 	private File downloadingMediaFile; 
 	
@@ -51,7 +51,7 @@ public class StreamingMediaPlayer {
 	
 	private int counter = 0;
 	
- 	public StreamingMediaPlayer(Context  context,TextView textStreamed, ImageButton	playButton, Button	streamButton,ProgressBar	progressBar) 
+ 	public StreamingMediaPlayer(Context  context,TextView textStreamed, Button	playButton, ProgressBar	progressBar) 
  	{
  		this.context = context;
 		this.textStreamed = textStreamed;
@@ -195,10 +195,10 @@ public class StreamingMediaPlayer {
     		mediaPlayer.prepare();
     		mediaPlayer.seekTo(curPosition);
     		
-    		//  Restart if at end of prior beuffered content or mediaPlayer was previously playing.  
+    		//  Restart if at end of prior buffered content or mediaPlayer was previously playing.  
     		//	NOTE:  We test for < 1second of data because the media player can stop when there is still
         	//  a few milliseconds of data left to play
-    		boolean atEndOfFile = mediaPlayer.getDuration() - mediaPlayer.getCurrentPosition() <= 1000;
+    		boolean atEndOfFile = (mediaPlayer.getDuration() - mediaPlayer.getCurrentPosition() )<= 1000;
         	if (wasPlaying || atEndOfFile){
         		mediaPlayer.start();
         	}
@@ -226,8 +226,7 @@ public class StreamingMediaPlayer {
 	        public void run() {
 	    		mediaPlayer.start();
 	    		startPlayProgressUpdater();
-	        	playButton.setEnabled(true);
-	        	//streamButton.setEnabled(false);
+	        	playButton.setClickable(true);
 	        }
 	    };
 	    handler.post(updater);
@@ -255,6 +254,7 @@ public class StreamingMediaPlayer {
 			Runnable notification = new Runnable() {
 		        public void run() {
 		        	startPlayProgressUpdater();
+		        	//mediaLengthInSeconds = mediaPlayer.getDuration();
 				}
 		    };
 		    handler.postDelayed(notification,1000);
@@ -262,7 +262,7 @@ public class StreamingMediaPlayer {
     }    
     
     public void interrupt() {
-    	playButton.setEnabled(false);
+    	playButton.setClickable(false);
     	isInterrupted = true;
     	validateNotInterrupted();
     }

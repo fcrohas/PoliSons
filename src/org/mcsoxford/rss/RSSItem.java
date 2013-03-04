@@ -24,6 +24,8 @@ package org.mcsoxford.rss;
 public class RSSItem extends RSSBase {
   private final java.util.List<MediaThumbnail> thumbnails;
   private String content;
+  private String enclosure;
+  private long length;
 
   /* Internal constructor for RSSHandler */
   RSSItem(byte categoryCapacity, byte thumbnailCapacity) {
@@ -34,6 +36,12 @@ public class RSSItem extends RSSBase {
   /* Internal method for RSSHandler */
   void addThumbnail(MediaThumbnail thumbnail) {
     thumbnails.add(thumbnail);
+  }
+
+  /* Internal method for RSSHandler */
+  void addMediaObject(MediaObject mediaObject) {
+	  this.enclosure = mediaObject.getUrl().toString();
+	  this.length = mediaObject.getLength();
   }
 
   /**
@@ -52,6 +60,14 @@ public class RSSItem extends RSSBase {
     return content;
   }
 
+  public String getEnclosure() {
+	    return enclosure;
+	  }
+
+  public long getLength() {
+	    return length;
+	  }
+  
   /* Internal method for RSSHandler */
   void setContent(String content) {
     this.content = content;

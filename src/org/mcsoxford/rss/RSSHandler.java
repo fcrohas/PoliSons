@@ -222,6 +222,39 @@ class RSSHandler extends org.xml.sax.helpers.DefaultHandler {
   };
 
   /**
+   * Setter for one or multiple RSS &lt;media:thumbnail&gt; elements inside an
+   * &lt;item&gt; element. The thumbnail element has only attributes. Both its
+   * height and width are optional. Invalid elements are ignored.
+   */
+  private final Setter SET_ENCLOSURE = new AttributeSetter() {
+
+    private static final String ENCLOSURE_URL = "url";
+    private static final String ENCLOSURE_LENGTH = "length";
+    private static final long DEFAULT_LENGTH = -1;
+
+    @Override
+    public void set(org.xml.sax.Attributes attributes) {
+      if (item == null) {
+        // ignore invalid media:thumbnail elements which are not inside item
+        // elements
+        return;
+      }
+
+      final String url = MediaAttributes.stringValue(attributes, ENCLOSURE_URL);
+      final long length = MediaAttributes.longValue(attributes, ENCLOSURE_LENGTH, DEFAULT_LENGTH);
+
+      if (url == null) {
+        // ignore invalid media:thumbnail elements which have no URL.
+        return;
+      }
+
+      item.addMediaObject(new MediaObject(android.net.Uri.parse(url), length));
+    }
+
+  };
+  
+  
+  /**
    * Use configuration to optimize initial capacities of collections
    */
   private final RSSConfig config;
@@ -243,6 +276,7 @@ class RSSHandler extends org.xml.sax.helpers.DefaultHandler {
     setters.put("category", ADD_CATEGORY);
     setters.put("pubDate", SET_PUBDATE);
     setters.put("media:thumbnail", ADD_MEDIA_THUMBNAIL);
+    setters.put("enclosure", SET_ENCLOSURE);
   }
 
   /**

@@ -8,17 +8,21 @@ public class IRssData {
 	public String description;
 	public String date;
 	public String link;
+	public String enclosure;
+	public long length;
 	public IRssData() {
 		super();
 	}
 
-	public IRssData( Drawable image, String title, String description, String date, String link) {
+	public IRssData( Drawable image, String title, String description, String date, String link, String enclosure, int length) {
 		super();
 		this.image = image;
 		this.title = title;
 		this.description = description;
 		this.date = date;
 		this.link = link;
+		this.enclosure = enclosure;
+		this.length = length;
 	}
 	
 }

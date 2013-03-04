@@ -26,7 +26,8 @@ public class PoliSonActivity extends Activity implements OnItemClickListener, Vi
 
     String[] menuItems = {
     		"Nouvelles",
-    		"PodCast"
+    		"PodCast",
+    		"On Air"
     };
 	
 	/** Called when the activity is first created. */
@@ -55,6 +56,9 @@ public class PoliSonActivity extends Activity implements OnItemClickListener, Vi
 		}
 		if (position == 1) {
 			this.startActivity(new Intent(this, IRssMenu.class));
+		}
+		if (position == 2) {
+			this.startActivity(new Intent(this, IRssDetail.class).putExtra("link", "").putExtra("name", getString(R.string.title_podcasts)).putExtra("length",0).putExtra("enclosure", "http://heroes.ab-ae.fr/poli-sons.mp3"));
 		}
 		
 	}
